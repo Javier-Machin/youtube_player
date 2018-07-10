@@ -1,0 +1,97 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.main_container {
+  display: grid;
+  width: 80%;
+  height: 100%;
+  margin: 150px auto;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "left right";
+}
+
+.navbar {
+  position: fixed;
+  text-align: center;
+  top: 0;
+  box-shadow: -9px -9px 20px 0;
+  padding: 15px 10px;
+  background: white;
+  width: 100%;
+}
+
+.searchbar {
+  display: inline-block;
+  width: 30%;
+}
+
+.searchbar input {
+  height: 25px;
+  width: 100%;
+  border-radius: 2px;
+  border: 2px solid rgba(0,0,0,0.1);
+}
+
+.navbar .title {
+  display: inline-block;
+  font-weight: bolder;
+  font-size: 24px;
+  float: left;
+}
+
+.video_container {
+  grid-area: left;
+  justify-self: center;
+  width: 100%;
+  min-width: 480px;
+}
+
+.video_container iframe {
+  width: 100%;
+}
+
+figcaption span {
+  float: right;
+  margin: 0 5px;
+}
+
+.comment {
+  padding: 10px;
+}
+
+.navbar .author_profile {
+  float: right;
+  width: 36px;
+  height: 36px;
+  margin: 0 20px 0 0;
+}
+
+.author_profile {
+  float: left;
+  width: 48px;
+  height: 48px;
+  margin: 0 10px;
+  border-radius: 100px;
+}
+
+.videos_sidebar {
+  grid-area: right;
+  width: 100%;
+}
+
+.video_recommended {
+  display: block;
+  padding: 15px 30px 55px 30px;
+  min-width: 360px;
+  margin-bottom: 5px;
+}
+
+.video_thumb {
+  float: left;
+  width: 180px;
+  height: 120px;
+  margin: 0 10px;
+}
